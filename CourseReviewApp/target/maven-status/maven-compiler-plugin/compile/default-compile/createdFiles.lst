@@ -1,0 +1,12 @@
+model/Comment.class
+Service/CourseService.class
+model/Course.class
+model/Instructor.class
+repo/CourseRepository.class
+repo/UserRepository.class
+Service/Data.class
+repo/InstructorRepository.class
+model/User.class
+repo/CommentRepository.class
+com/example/CourseReviewApp/CourseReviewAppApplication.class
+Controller/CourseController.class

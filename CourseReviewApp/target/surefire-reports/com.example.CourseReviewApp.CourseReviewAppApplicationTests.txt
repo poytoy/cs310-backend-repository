@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.example.CourseReviewApp.CourseReviewAppApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.152 s <<< FAILURE! - in com.example.CourseReviewApp.CourseReviewAppApplicationTests
+contextLoads  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'reactiveStreamsMongoClient' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoReactiveAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.reactivestreams.client.MongoClient]: Factory method 'reactiveStreamsMongoClient' threw exception; nested exception is java.lang.NoSuchMethodError: 'com.mongodb.ServerApi com.mongodb.MongoClientSettings.getServerApi()'
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.reactivestreams.client.MongoClient]: Factory method 'reactiveStreamsMongoClient' threw exception; nested exception is java.lang.NoSuchMethodError: 'com.mongodb.ServerApi com.mongodb.MongoClientSettings.getServerApi()'
+Caused by: java.lang.NoSuchMethodError: 'com.mongodb.ServerApi com.mongodb.MongoClientSettings.getServerApi()'
+
